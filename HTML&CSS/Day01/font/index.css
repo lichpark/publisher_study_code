@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "HSSaemaul-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 25px;
+}
+.menu {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+}
+.menu > div:nth-child(1) {
+  font-family: "Black Han Sans", sans-serif;
+}
+.menu > div:nth-child(2) {
+  font-family: "Do Hyeon", sans-serif;
+}
+.menu > div:nth-child(3) {
+  font-family: "Jua", sans-serif;
+}
+
+.ol_menu {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.ol_menu > li:nth-child(1) {
+  font-family: "Black Han Sans", sans-serif;
+}
+.ol_menu > li:nth-child(2) {
+  font-family: "Do Hyeon", sans-serif;
+}
+.ol_menu > li:nth-child(3) {
+  font-family: "HSSaemaul-Regular";
+}
+
+.buttons {
+  width: 40vw;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+}
+.sub_button {
+  font-weight: bold;
+  margin-bottom: 14px;
+  padding: 10px 0px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.sub_button > span {
+  padding-left: 10px;
+}
+
+.kakao_button {
+  background-color: #f7e111;
+  border: 1px solid #f7e111;
+}
+.apple_button {
+  background-color: white;
+  border: 1px solid rgb(216, 216, 216);
+}
+.apple_button > i {
+  font-size: 20px;
+}
+.buttons_last_div {
+  margin-top: 10px;
+}
+.buttons_last_div > span {
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-right: 5px;
+}
+.small_button {
+  background-color: white;
+  border: 1px solid rgb(216, 216, 216);
+  padding: 4px 5px;
+  font-weight: bold;
+  border-radius: 4px;
+}
