@@ -1,0 +1,29 @@
+.box_old {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  /* position & top/left/right/bottom */
+  /* relative:지금위치에서 */
+  /* fixed:브라우저에서 고정됨 */
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  /* position & top/left/right/bottom */
+  /* relative:지금위치에서 */
+  /* fixed:브라우저에서 고정됨 */
+}
+
+.ice {
+  /* 
+    absolute : 절대적(브라우저 위치) 
+    단 부모가 relative or fixed이면 그것을 절대적으로 잡는다.
+    */
+  position: absolute;
+  right: 10px;
+}
