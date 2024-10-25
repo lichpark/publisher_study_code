@@ -1,0 +1,74 @@
+.home {
+  width: 100vw;
+  padding: 250px 0;
+}
+
+.home > article {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.home > article > .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left > figure {
+  position: relative;
+}
+
+.left > figure > .phone {
+  width: 100%;
+}
+
+.left > figure > .capture1 {
+  width: 50%;
+  position: absolute;
+  top: 110px;
+  left: 130px;
+}
+
+.left > .text > strong {
+  color: #3282f6;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.left > .text > h4 {
+  font-size: 50px;
+  color: #191f28;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.home > article > .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right > figure {
+  position: relative;
+}
+
+.right > figure > .phone {
+  width: 100%;
+}
+
+.right > figure > .capture2 {
+  width: 50%;
+  position: absolute;
+  top: 110px;
+  left: 130px;
+}
+
+.right > .text {
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(51, 61, 75);
+  line-height: 1.5;
+}

@@ -1,0 +1,14 @@
+.motto {
+  padding: 200px 0px;
+  background-color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.6;
+  font-weight: 1200;
+}
