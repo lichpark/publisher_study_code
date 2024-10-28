@@ -1,0 +1,18 @@
+:root {
+  --font--color--primary: #0f0f0f;
+  --bg--menu--primary: #c4c4c455;
+  --bg--color--grey: #f5f5f5;
+
+  /* font */
+  --font--letter--spacing--small: 5px;
+  --font--letter--spacing-medium: 10px;
+
+  --font--line-height--small: 1.4;
+  --font--line-height--medium: 2;
+
+  --font--size--small: 11px;
+  --font--size--medium: 14px;
+  --font--size--large: 20px;
+  --font--size--x--large: 30px;
+  --font--size--mega: 40px;
+}

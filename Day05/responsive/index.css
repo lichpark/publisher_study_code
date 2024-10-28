@@ -1,0 +1,87 @@
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+}
+/* 768보다 작으면 아래 css를 적용 */
+@media screen and (max-width: 768px) {
+  .box {
+    background-color: skyblue;
+  }
+}
+/* pc 버전이면 home & about있고, pc버전아님 햄버거 메뉴 */
+/* pc버전 메뉴  4*1
+    태블릿버전 2*2 2개
+    모바일버전 1*4 네모 
+*/
+header {
+  width: 100vw;
+}
+nav {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+}
+.pc_view {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+
+.pc_view > ul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.pc_view > ul > li {
+  list-style-type: none;
+}
+.mobile_view {
+  display: none;
+  /* opacity:0 은 있으나 안보이게 하는것 */
+  /* opacity: 0; */
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.wrapper {
+  display: flex;
+}
+.sec_box {
+  width: 98px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 1024px) {
+  /* .main_sec1 {
+    width: 200px;
+  } */
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .main_sec1 {
+    width: 100px;
+  } */
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .pc_view {
+    display: none;
+  }
+  .mobile_view {
+    display: block;
+  }
+}

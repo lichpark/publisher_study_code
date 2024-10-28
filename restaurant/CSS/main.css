@@ -1,0 +1,57 @@
+.hero {
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  background-image: url(../image/top_bg.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero > figure {
+  width: 35%;
+  height: 10%;
+  margin: 0 auto;
+  padding: 10% 0%;
+}
+
+.hero__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.main_menu {
+  width: 100%;
+}
+.main_menu__ul {
+  width: 100%;
+}
+.main_menu__ul__li {
+  width: 100%;
+  list-style: none;
+  margin: 5% 0%;
+  background-color: var(--bg--menu--primary);
+}
+.main_menu__ul__li > a {
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 0%;
+  color: var(--font--color--primary);
+}
+.main_menu__ul__li__a__img {
+  width: 100%;
+  max-height: 80%;
+  object-fit: cover;
+}
+.main_menu__ul__li > a > div {
+  padding: 10px;
+}
+.main_menu__ul__li:hover {
+  background-color: var(--bg--color--grey);
+}
+
+@media screen and (max-width: 1024px) {
+  .main_menu__ul__li__a__img {
+    max-height: 80%;
+  }
+}
