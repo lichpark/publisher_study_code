@@ -1,0 +1,12 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* 바꿈이 일어나는 속성을 컨트롤 */
+  /* 타겟 걸리는 시간 애니메이션 함수 */
+  transition: all 1s cubic-bezier(0, 1, 0, 1);
+}
+.box:hover {
+  background-color: green;
+  transform: rotate(45deg) scale(1.5);
+}
