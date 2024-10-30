@@ -1,0 +1,37 @@
+.board_wrap {
+  width: 80%;
+  flex-direction: row;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.introduce {
+  flex-direction: column;
+}
+.board_title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10%;
+  font-size: var(--font--size--large);
+  border-bottom: 1px solid var(--border--header);
+  margin-bottom: 5%;
+}
+
+.board_content > a > img {
+  width: 100%;
+  object-fit: cover;
+}
+.board_content > ul > li {
+  padding: 3% 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--font--size--small);
+}
+.main_more {
+  padding: 3% 4%;
+}
+
+.more_lineheight {
+  line-height: 16px;
+}

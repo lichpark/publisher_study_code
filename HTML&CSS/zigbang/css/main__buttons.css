@@ -1,0 +1,32 @@
+.main__buttons {
+  background-color: var(--bg--main--buttons);
+}
+
+.main__buttons > figure {
+  width: 18%;
+}
+
+.main__buttons > figure > img {
+  width: 100%;
+}
+.main__buttons > div {
+  width: 40%;
+}
+
+.app_buttons {
+  gap: 4%;
+}
+.center_button {
+  width: 40%;
+}
+.center_button > a {
+  display: block;
+  padding: 10% 10%;
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--bg--main--app--button);
+  font-size: var(--font--size--large);
+}
+.center_button > a:hover {
+  background-color: var(--bg--main--app--button--hover);
+}

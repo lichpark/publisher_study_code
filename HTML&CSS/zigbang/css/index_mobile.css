@@ -1,0 +1,117 @@
+@media screen and (max-width: 768px) {
+  header > nav {
+    display: flex;
+  }
+  .logo {
+    width: 90px;
+  }
+
+  .right_menu__ul__li__a__span__title {
+    font-size: var(--font--size--small);
+  }
+  .right_menu__ul__li__a__span__sub {
+    display: none;
+  }
+  .right_menu__ul__li__a {
+    align-items: center;
+  }
+
+  .right_menu__ul__li__a__span__title {
+    font-size: var(--font--size--medium);
+  }
+  .left_menu {
+    width: 30%;
+  }
+  .regi_move {
+    display: none;
+  }
+  main {
+    padding-top: 30px;
+  }
+  .width40 {
+    width: 80%;
+  }
+  .main__buttons > div {
+    width: 50%;
+  }
+  .footer__links > ul > li > a {
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 428px) {
+  .right_menu__ul__li__a__img__logo__img {
+    width: 90%;
+  }
+  .footer_border_right {
+    border-right: none;
+  }
+  .footer_copyright {
+    display: none;
+  }
+  .main__buttons > div {
+    width: 70%;
+  }
+  .center_button > a {
+    font-size: 9px;
+  }
+  .footer__links > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 4%;
+  }
+  .header__viewpc {
+    width: 100%;
+    max-width: 360px;
+  }
+  .right_menu__ul__li {
+    padding-top: 0;
+  }
+
+  .footer__links > ul > li {
+    padding: 4%;
+    word-break: keep-all;
+  }
+  .footer__links > ul > li > a {
+    width: 100%;
+    text-align: center;
+    white-space: wrap;
+  }
+  .width40 {
+    width: 100%;
+    max-width: 360px;
+  }
+  .all_right_text {
+    margin-top: 5%;
+  }
+  .board_wrap {
+    flex-direction: column;
+  }
+  .width33p {
+    width: 90%;
+    margin: 5% auto;
+  }
+  .hero_wrap > ul > li {
+    font-size: var(--font--size--small);
+  }
+  .hero_wrap > h2 {
+    font-size: var(--font--size--medium);
+  }
+  .right_menu__ul__li__a__span__title {
+    font-size: var(--font--size--small);
+  }
+  .mobie_hidden {
+    display: none;
+  }
+  .right_menu__ul__li__a {
+    line-height: 20px;
+  }
+  .header_bg_dark {
+    padding: 5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .left_menu {
+    width: 43%;
+  }
+}

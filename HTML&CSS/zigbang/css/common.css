@@ -1,0 +1,31 @@
+.width100 {
+  width: 100%;
+}
+.maxwidth2048 {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.width33p {
+  width: 33%;
+}
+.flex_center_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+.bold {
+  font-weight: bold;
+}
+main {
+  padding-top: 50px;
+  width: 100vw;
+}
+.spantoblock {
+  display: block;
+}

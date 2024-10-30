@@ -1,0 +1,32 @@
+:root {
+  --bg--main: #ffffff;
+  --bg--main--sub: #f3f5f5;
+  --bg--main--search: #1f2939;
+  --bg--header--gray: #efeeeb;
+  --bg--main--buttons: #f3f5f4;
+  --bg--main--app--button: #dce2e2;
+  --bg--main--app--button--hover: #0000001a;
+
+  /*color*/
+  --color--base: #1e2327;
+  --color--hover: #f76a23;
+  --color--search--hover: rgba(0, 0, 0, 0.1);
+  --color--header--spec: #3d4853;
+  --color--dark--menu: #758793;
+  --color--footer: #55443d;
+  --color--reg--header: #336098;
+  /* border */
+  --border--header: #e1e1e1;
+
+  /* font */
+  --font--letter--spacing--small: 5px;
+  --font--letter--spacing-medium: 10px;
+
+  --font--line-height--small: 1.4;
+  --font--line-height--medium: 2;
+
+  --font--size--small: 12px;
+  --font--size--medium: 16px;
+  --font--size--large: 17px;
+  --font--size--x--large: 40px;
+}

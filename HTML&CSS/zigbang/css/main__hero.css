@@ -1,0 +1,72 @@
+.main__hero {
+  width: 100%;
+  background: url(../image/zigbangWeb_heroImg_1440.jpg) no-repeat center;
+  padding-top: 10%;
+}
+.hero_wrap {
+  flex-direction: column;
+  gap: 2%;
+}
+
+.hero_wrap > h2 {
+  font-size: var(--font--size--x--large);
+  color: var(--bg--main);
+  padding-bottom: 10%;
+}
+.hero_wrap > ul {
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: var(--bg--main--search);
+  color: var(--border--header);
+  padding: 0% 1%;
+  white-space: nowrap;
+  border-radius: 9px;
+}
+
+.hero_wrap > ul > li {
+  width: 20%;
+  font-size: var(--font--size--large);
+  text-align: center;
+}
+.hero_wrap > ul > li > span {
+  display: block;
+  cursor: pointer;
+  padding: 10% 5%;
+}
+.search__div {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.serch__wrap {
+  border: 1px solid var(--bg--main--search);
+  border-radius: 5px;
+  background-color: var(--bg--main);
+  justify-content: start;
+}
+.serch_bar {
+  width: 92%;
+  padding: 2% 5%;
+}
+.serch_bar > input {
+  outline: none;
+  font-size: var(--font--size--large);
+}
+
+.search_button {
+  width: 8%;
+}
+.search_button > button {
+  width: 100%;
+  padding: 15%;
+  background-color: var(--color--hover);
+  text-align: center;
+  border: none;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  cursor: pointer;
+  text-align: center;
+}
+.search_button > button > img {
+  width: 100%;
+  object-fit: cover;
+}

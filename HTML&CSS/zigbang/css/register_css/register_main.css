@@ -1,0 +1,16 @@
+.section__join {
+  background-image: url(../../image/image-01.png);
+  background-size: 150%;
+  background-repeat: no-repeat; /* 반복 여부와 반복 방향 */
+  background-position: 45% 8%;
+  min-height: 512px;
+}
+.register_join {
+  /* background-color: var(--bg--main); */
+  color: var(--bg--main);
+}
+.register_button > a {
+  width: 40%;
+  background-color: var(--color--hover);
+  padding: 4% 10%;
+}
