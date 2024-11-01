@@ -1,0 +1,105 @@
+.flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+.col-lg-3 {
+  border: 1px solid #dadada;
+}
+.total_price_bigger {
+  text-align: right;
+}
+.product_col {
+  border: 1px solid #dadada;
+  margin: 2%;
+}
+.product_col__div {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+}
+.product_wrap {
+  padding: 0px 7px;
+  width: 75%;
+}
+.del {
+  border: none;
+  color: #535252;
+  text-align: center;
+  text-decoration: underline;
+  background-color: white;
+}
+
+.img_wrap_div {
+  width: 25%;
+}
+.img_wrap_div > img {
+  width: 100%;
+}
+.right_total {
+  height: 240px;
+  padding: 10px;
+}
+.price_name {
+  display: flex;
+  justify-content: space-between;
+}
+.arraival {
+  font-size: 15px;
+  color: green;
+  opacity: 0.8;
+  margin: 10px 0px;
+}
+.arraival > span {
+  color: darkgray;
+}
+.price_wrap__sub {
+  font-size: 14px;
+}
+.sub_sale {
+  color: white;
+  background-color: red;
+  padding: 2px 1px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.arrival_sub {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.item_price {
+  font-weight: bold;
+  font-size: 17px;
+}
+.earn {
+  width: 40%;
+  margin: 10px 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+.button_wrap {
+  width: 90px;
+  border: 1px solid #dadada;
+  display: flex;
+}
+.button_wrap_sub {
+  border: none;
+  width: 30px;
+  background-color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.total_delivery_price__dev {
+  border-bottom: 1px solid #dadada;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.buy_button {
+  text-align: center;
+  padding-top: 10px;
+}
+.buy_button__button {
+  width: 100%;
+}
