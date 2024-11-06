@@ -1,3 +1,2 @@
-const adds = document.querySelectorAll(".button__li__a");
-console.log(adds);
-adds.classList.push("yellow");
+const adds = document.querySelectorAll(".button__li__a")[1];
+adds.classList.add("yellow");
