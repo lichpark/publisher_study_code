@@ -1,0 +1,38 @@
+.wrap {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+  box-shadow: 10px 10px 26px 5px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 10px 10px 26px 5px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 10px 10px 26px 5px rgba(0, 0, 0, 0.46);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.card > img {
+  width: 90px;
+  height: 90px;
+  border-radius: 9999px;
+  border: 1px solid black;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+  margin-left: 15px;
+}
+.name_title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.job_title {
+  padding-top: 5px;
+  color: #b3b2b2;
+  opacity: 0.7;
+  font-size: 12px;
+}

@@ -1,0 +1,64 @@
+.container {
+  width: 100vw;
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 0 10px;
+}
+.card {
+  padding: 0px;
+  border-radius: 4px;
+  padding-bottom: 20px;
+}
+.img__div {
+  width: 100%;
+}
+.img {
+  width: 100%;
+  /* border-radius: 5%; */
+}
+.price__div {
+  font-weight: bold;
+  color: black;
+}
+.percent {
+  font-weight: 17px;
+  color: red;
+}
+.market_name {
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  line-height: 16px;
+  color: #777;
+}
+.product {
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+
+  display: flex;
+  min-width: 0;
+  width: 100%;
+}
+.product > span {
+  overflow: hidden;
+  flex: 1;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+}
+.nugging_text {
+  margin-top: 6px;
+  color: #9e9e9e;
+  font-weight: 400;
+  line-height: 14px;
+  font-size: 11px;
+}

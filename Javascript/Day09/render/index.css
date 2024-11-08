@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+  background-color: #f5f5f5;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card > img {
+  width: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.card > button {
+  margin-top: 20px;
+  background-color: #243c84;
+  border: 1px solid #243c84;
+  color: white;
+  font-weight: 700;
+}
