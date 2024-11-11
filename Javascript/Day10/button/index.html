@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <div>
+        <h1 class="text-size-40">회원가입</h1>
+        <div class="text-size-22 text-align-left">
+          <div class="border-bar"></div>
+          회원가입 정보를 <br />입력해 주세요<span
+            class="emoji emoji-eye"
+          ></span>
+        </div>
+        <div>
+          <div>
+            <div>
+              <div class="input-wrap address-wrap">
+                <fieldset class="input-content">
+                  <div class="form-address-wrap">
+                    <div class="zip-code-wrap">
+                      <input
+                        id="ui_member_id"
+                        type="text"
+                        placeholder="아이디를 입력해 주세요"
+                      />
+                      <button
+                        type="button"
+                        class="button-gray text-size-14"
+                        id="ui_member_id_check_btn"
+                        disabled=""
+                      >
+                        중복확인
+                      </button>
+                    </div>
+                    <div
+                      class="display-flex flex-direction-row text-align-left"
+                    >
+                      <span
+                        class="rex-check text-size-14 color-999 display-flex margin-right-16"
+                        id="id-alphaNum-tag"
+                      >
+                        <span class="check-icon display-inline-block"></span>
+                        영문 / 숫자
+                      </span>
+                      <span
+                        class="rex-check text-size-14 color-999 display-flex"
+                        id="id-length-tag"
+                      >
+                        <span class="check-icon display-inline-block"></span>
+                        6~20자 내외
+                      </span>
+                    </div>
+                    <input
+                      class="margin-top-24"
+                      id="ui_member_pwd"
+                      type="password"
+                      placeholder="비밀번호를 입력해 주세요"
+                    />
+                    <span
+                      class="eye-close left-90 position-absolute display-none"
+                      style="top: 39.5%"
+                    >
+                      <i class="fa-solid fa-eye"></i>
+                    </span>
+                    <span
+                      class="eye-open left-90 position-absolute display-none"
+                      style="top: 39.5%"
+                    >
+                      <i class="fa-solid fa-eye-slash"></i>
+                    </span>
+                    <div
+                      class="display-flex flex-direction-row text-align-left"
+                    >
+                      <span
+                        class="rex-check text-size-14 color-999 display-flex margin-right-16"
+                        id="password-eng-tag"
+                      >
+                        <span class="check-icon display-inline-block"></span>
+                        영문
+                      </span>
+                      <span
+                        class="rex-check text-size-14 color-999 display-flex margin-right-16"
+                        id="password-num-tag"
+                      >
+                        <span class="check-icon display-inline-block"></span>
+                        숫자
+                      </span>
+                      <span
+                        class="rex-check text-size-14 color-999 display-flex margin-right-16"
+                        id="password-special-tag"
+                      >
+                        <span class="check-icon display-inline-block"></span>
+                        특수문자 (!@$%^*_+~)
+                      </span>
+                      <span
+                        class="rex-check text-size-14 color-999 display-flex margin-right-16"
+                        id="password-lengthp-tag"
+                      >
+                        <span class="check-icon display-inline-block"></span>
+                        8~20자 내외
+                      </span>
+                    </div>
+                    <input
+                      class="margin-top-24"
+                      id="ui_email"
+                      type="text"
+                      placeholder="이메일을 입력해 주세요"
+                      maxlength="50"
+                    />
+                    <div class="check-text-box">
+                      <span
+                        class="rex-check text-size-14 color-999 display-flex margin-right-16"
+                        id="email-email-tag"
+                      >
+                        <span class="check-icon display-inline-block"></span>
+                        이메일 형식
+                      </span>
+                    </div>
+                  </div>
+                </fieldset>
+                <span class="error-text"> </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" id="ui_user_value" />
+        <input type="hidden" id="ui_certificationType" />
+        <input type="hidden" id="ui_certification_complete" />
+        <input type="hidden" id="ui_member_name" />
+        <input type="hidden" id="ui_sex" />
+        <input type="hidden" id="ui_birthd" />
+        <input type="hidden" id="ui_mcomp" />
+        <input type="hidden" id="ui_mobile" />
+        <button class="round-button margin-top-50" id="ui_user_save_btn">
+          가입
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
