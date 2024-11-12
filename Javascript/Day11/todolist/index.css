@@ -1,0 +1,30 @@
+#todo__ul {
+  list-style-type: none;
+  list-style: none;
+}
+#todoIns {
+  font-size: 20px;
+  border: none;
+}
+#todoIns:focus {
+  outline: none;
+}
+.span_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+#todoButton {
+  font-size: 20px;
+  border: 1px solid #03d8d8;
+  background-color: #03d8d8;
+  cursor: pointer;
+  color: #fefefe;
+  border-radius: 5px;
+}
+.todo__li {
+  padding: 3px;
+  font-weight: bold;
+}
+.li__span {
+  font-size: 20px;
+}
