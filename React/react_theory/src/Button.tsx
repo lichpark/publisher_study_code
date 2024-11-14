@@ -1,16 +1,22 @@
-const Button = () => {
-  //1. css 파일 만들고 꾸미기
+type MainColor = "#2A59FE" | "#557AFE";
+type SubColor = "grey" | "white";
 
-  //2.inline으로 하기
-  const name = "BTS";
-  const css: React.CSSProperties = {
-    color: "white",
-    border: "none",
-    margin: "0px 5px",
-    padding: "5px",
-    backgroundColor: "blue",
+type ButtonProps = {
+  bgcolor: MainColor;
+  //txt: "Primary" | "Secondary";
+  content: string;
+  color: SubColor;
+};
+const Button = (props: ButtonProps) => {
+  const style: React.CSSProperties = {
+    backgroundColor: `${props.bgcolor}`,
+    padding: "8px 16px",
+    borderRadius: "4px",
+    fontWeight: "700",
+    color: `${props.color}`,
   };
 
-  return <button style={css}>{name} 버튼</button>;
+  return <button style={style}>{props.content}</button>;
 };
+
 export default Button;
