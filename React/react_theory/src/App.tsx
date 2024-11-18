@@ -20,6 +20,7 @@ import { GiFlatHammer } from "react-icons/gi";
 // import { IconBaseProps } from "react-icons";
 import Box from "./iconins/Box";
 import Header from "./Layout/Header";
+import LikeButton from "./TestButton/LikeButton";
 
 // const textList = {
 //   warnText: [
@@ -142,6 +143,7 @@ function App() {
         />
         <Header children={"text"} />
       </>
+      <LikeButton />
     </div>
   );
 }
