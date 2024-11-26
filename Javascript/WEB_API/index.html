@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEB API</title>
     <!-- <script src="index.js" defer></script> -->
-    <script src="index1.js" defer></script>
+    <!-- <script src="index1.js" defer></script> -->
+    <!-- <script src="review.js" defer></script> -->
+    <!-- <script src="api.js" defer></script> -->
+    <script src="map.js" defer></script>
   </head>
   <body>
     <!-- <h1 id="coffee"></h1> -->
@@ -14,7 +17,45 @@
     <button id="remove">삭제</button>
     <h1>음식 리스트</h1>
     <ol id="foodList"></ol> -->
-    <button id="rocket">🚀 rocket 🚀</button>
-    <span id="sec">5</span>
+    <!-- <button id="rocket">🚀 rocket 🚀</button>
+    <span id="sec">5</span> -->
+    <input type="text" id="cnt_ins" />
+    <button id="cnt_button">카운트 다운</button>
+    <span id="cnt_span"></span>
+
+    <div id="nowTime"></div>
+    <ol id="ol"></ol>
+    <ol id="ol2"></ol>
+
+    <button
+      data="https://fakerapi.it/api/v2/addresses?_quantity=10"
+      datatype="city"
+      data2="address"
+      class="data_button"
+    >
+      address button
+    </button>
+    <!-- city 10-->
+    <button
+      data="https://fakerapi.it/api/v2/books?_quantity=10"
+      datatype="title"
+      data2="books"
+      class="data_button"
+    >
+      books button
+    </button>
+    <!-- title 10-->
+    <button
+      data="https://fakerapi.it/api/v2/persons?_quantity=10&_gender=female&_birthday_start=2005-01-01"
+      datatype="firstname"
+      data2="firstname"
+      class="data_button"
+    >
+      person button
+    </button>
+    <!-- firstname 10-->
+
+    <h1 id="h1_data">{} data</h1>
+    <ol id="ol3"></ol>
   </body>
 </html>
