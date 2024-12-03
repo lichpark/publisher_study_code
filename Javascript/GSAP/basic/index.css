@@ -1,0 +1,25 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: lightskyblue;
+  border-radius: 9999px;
+  opacity: 0;
+  transform: translateY(300px);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  opacity: 0;
+  transform: translateX(300px);
+}
+.textani {
+  padding: 5px;
+  font-size: 40px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  /*  */
+  transform: translateY(100px);
+}

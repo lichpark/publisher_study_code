@@ -1,0 +1,27 @@
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.first {
+  background-color: #e9e8e6;
+}
+
+.second {
+  background-color: #ffdce1;
+}
+
+.third {
+  background-color: #ead5f9;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  transform: translateX(300px);
+}
+
+.textdiv {
+  opacity: 0;
+}
