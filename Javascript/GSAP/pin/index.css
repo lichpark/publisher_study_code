@@ -1,0 +1,55 @@
+section {
+  width: 100vw;
+  height: 100vh;
+}
+.first {
+  background-color: coral;
+}
+.second {
+  background-color: lightblue;
+}
+.third {
+  background-color: pink;
+  position: relative;
+  height: 100vh;
+}
+.forth {
+  background-color: azure;
+  position: relative;
+  height: 100vh;
+}
+.fifth {
+  background-color: greenyellow;
+  position: relative;
+  height: 100vh;
+}
+.sixth {
+  background-color: orangered;
+}
+/* .box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid darkcyan;
+  opacity: 0;
+  transform: translateX(200px);
+} */
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 700;
+  flex: 0 0 200px;
+}
+
+.card > h1 {
+  font-size: 30px;
+}
+
+.card > h1 {
+  font-size: 24px;
+}
