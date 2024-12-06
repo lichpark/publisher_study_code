@@ -13,12 +13,12 @@ const toggleMenu = () => {
   const navbarContentWrapper = document.querySelector(
     ".navbar-content-wrapper"
   );
-  const menudot = document.querySelector(".menu-dot");
+  const links = document.querySelectorAll(".nav-link");
   const chop1 = document.querySelector(".chop-1");
   const chop2 = document.querySelector(".chop-2");
-  const links = document.querySelectorAll(".nav-link");
+  const menuDot = document.querySelector(".menu-dot");
 
-  //사이드메뉴 보였다가 사라짐
+  // Check if the menu is currently open
   const isMenuOpen = navbarContent.style.display === "flex";
 
   const tl = gsap.timeline({
@@ -30,83 +30,140 @@ const toggleMenu = () => {
   });
 
   if (isMenuOpen) {
-    //화면 사라짐
-    tl.to(navbarContentWrapper, {
-      duration: 1,
-      x: "-100%",
-      ease: "power3.out",
-    });
+    // Close the menu
+    tl.fromTo(
+      navbarContentWrapper,
+      {
+        x: "0%",
+      },
+      {
+        duration: 1,
+        x: "-100%",
+        ease: "power3.inOut",
+      }
+    );
 
-    tl.to(links, {
-      y: 0,
-      opacity: 0,
-    });
+    tl.fromTo(
+      navbarContent,
+      {
+        opacity: 1,
+      },
+      {
+        duration: 1,
+        opacity: 0,
+        ease: "power3.inOut",
+      },
+      0
+    ); // Animate simultaneously with the navbarContentWrapper
 
-    tl.to(menudot, {
-      duration: 0.5,
-      backgroundColor: "#a11c1c",
-    });
-
+    // Reverse animation for chop1 and chop2
     tl.to(
       chop1,
       {
-        rotation: 0,
+        duration: 0.5,
+        rotate: 0,
+        ease: "power3.inOut",
       },
-      "<"
+      0
     );
+
     tl.to(
       chop2,
       {
-        rotation: 0,
+        duration: 0.5,
+        rotate: 0,
+        ease: "power3.inOut",
       },
-      "<"
+      0
     );
 
-    //젓가락 교차 해제
+    // Change menu-dot color to normal state (#a11c1c)
+    tl.to(
+      menuDot,
+      {
+        duration: 0.5,
+        backgroundColor: "#a11c1c",
+        ease: "power3.inOut",
+      },
+      0
+    );
   } else {
-    //이걸 설정해 줘야 한다. - complete때문에
+    // Open the menu
     navbarContent.style.display = "flex";
-    // 화면 보임
-    tl.to(navbarContentWrapper, {
-      duration: 1,
-      x: 0,
-      ease: "power3.in",
-    });
-    //링크가 밑에서 위로 후루룩
-    tl.from(links, {
-      y: 0,
-      opacity: 0,
-      filter: "blur(15px)",
-    });
 
-    tl.to(links, {
-      duration: 1,
-      y: 10,
-      filter: "blur(0px)",
-      opacity: 1,
-      stagger: 0.1,
-      ease: "power3.inOut",
-    });
+    tl.fromTo(
+      navbarContentWrapper,
+      {
+        x: "-100%",
+      },
+      {
+        duration: 1,
+        x: "0%",
+        ease: "power3.inOut",
+      }
+    );
 
-    //젓가락 교차
-    tl.to(menudot, {
-      duration: 0.5,
-      backgroundColor: "white",
-    });
+    tl.fromTo(
+      navbarContent,
+      {
+        opacity: 0,
+      },
+      {
+        duration: 1,
+        opacity: 1,
+        ease: "power3.inOut",
+      },
+      0
+    ); // Animate simultaneously with the navbarContentWrapper
 
+    tl.fromTo(
+      links,
+      {
+        y: "100%",
+        filter: "blur(10px)",
+        opacity: 0,
+      },
+      {
+        duration: 1,
+        y: "0%",
+        filter: "blur(0px)",
+        opacity: 1,
+        stagger: 0.1,
+        ease: "power3.inOut",
+      },
+      0.2
+    ); // Animate simultaneously
+
+    // Animate chop1 and chop2 to form a cross
     tl.to(
       chop1,
       {
-        rotation: 45,
+        duration: 0.5,
+        rotate: 45,
+        ease: "power3.inOut",
       },
-      "<"
+      0
     );
+
     tl.to(
       chop2,
       {
-        rotation: -45,
+        duration: 0.5,
+        rotate: -45,
+        ease: "power3.inOut",
       },
-      "<"
+      0
+    );
+
+    // Change menu-dot color to open state (#e7dfd4)
+    tl.to(
+      menuDot,
+      {
+        duration: 0.5,
+        backgroundColor: "#e7dfd4",
+        ease: "power3.inOut",
+      },
+      0
     );
   }
 };
@@ -287,26 +344,7 @@ const swiper = new Swiper(".swiper", {
   slidesPerGroup: 3,
   spaceBetween: 20,
   centeredSlides: false, //이녀석을 false로 바꾸면 왼쪽부터 순차적으로 슬라이드가 들어섬
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      spaceBetween: 5,
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      spaceBetween: 5,
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-      spaceBetween: 10,
-    },
-  },
+
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",

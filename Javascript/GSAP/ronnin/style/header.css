@@ -9,12 +9,13 @@
 }
 
 .menu-button {
+  z-index: 103;
   grid-column-gap: 0.42vw;
   grid-row-gap: 0.42vw;
   color: var(--red);
 }
 .menu-button > a {
-  z-index: 103;
+  z-index: 105;
   justify-content: flex-start;
   align-items: center;
   font-family: Arima, sans-serif;
@@ -48,7 +49,7 @@
 }
 
 .absolute-nav {
-  z-index: 1;
+  z-index: 0;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -61,7 +62,7 @@
 
 .nav-header {
   color: var(--red);
-  font-family: var(--font-sans);
+  font-family: Vifelliademo, sans-serif;
   font-size: 2.52vw;
   text-decoration: none;
 }
@@ -89,7 +90,7 @@
 }
 
 .navbar-content {
-  z-index: 101;
+  z-index: 100;
   background-color: #1a191966;
   justify-content: flex-start;
   align-items: flex-end;
@@ -187,7 +188,7 @@
 
 .nav-link {
   color: var(--white);
-  background-image: url(https://cdn.prod.website-files.com/668e560…/6697c86…_chop.webp);
+
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: 0%;

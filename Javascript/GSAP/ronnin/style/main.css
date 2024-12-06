@@ -527,6 +527,12 @@
   left: 18%;
   transform: scale(1.5);
 }
+.food {
+  font-size: 10rem;
+}
+.menu {
+  font-size: 10rem;
+}
 
 .food-menu-tag {
   justify-content: center;
@@ -597,7 +603,7 @@
 .slider {
   background-color: #0000;
   width: 100%;
-  height: 55vh;
+  height: 57vh;
   position: relative;
 }
 
@@ -681,10 +687,10 @@
 }
 .next-button {
   position: absolute;
-  top: 94%;
+  top: 92%;
   right: 0;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   border-radius: 50%;
   padding: 5px;
@@ -694,10 +700,10 @@
 
 .prev-button {
   position: absolute;
-  top: 94%;
-  right: 3%;
-  width: 30px;
-  height: 30px;
+  top: 92%;
+  right: 5%;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   border-radius: 50%;
   padding: 5px;
@@ -887,4 +893,27 @@
   grid-row-gap: 0.84vw;
   flex: none;
   display: flex;
+}
+
+@media screen and (max-width: 425px) {
+  .food {
+    font-size: 4rem;
+  }
+  .menu {
+    font-size: 4rem;
+  }
+  .food-menu-card-wrapper {
+    max-width: 65%;
+  }
+  .swiper-slide {
+    height: 60vh;
+  }
+  .slider {
+    height: 66vh;
+  }
+  .prev-button {
+    right: 17%;
+  }
+}
+@media screen and (max-width: 768) {
 }

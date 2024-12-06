@@ -399,6 +399,9 @@ img {
 img {
   border: 0;
 }
+.center {
+  text-align: center;
+}
 
 .bg-image-wrapper {
   z-index: -1;
@@ -411,18 +414,6 @@ img {
   position: absolute;
   inset: 0%;
   overflow: hidden;
-}
-
-@media screen and (max-width: 991px) {
-  #w-node-b238dda0-5d9c-3d80-0842-8b0e07b93d28-63311d9c {
-    order: 9999;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  #w-node-_7a97e597-04be-e121-a61b-fec013da0565-63311d9c {
-    grid-area: span 1 / span 2 / span 1 / span 2;
-  }
 }
 
 @font-face {

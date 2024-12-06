@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ronnin copy</title>
+    <link rel="icon" href="./imgs/favicon.png" />
     <link rel="stylesheet" href="./style/reset.css" />
     <link
       rel="stylesheet"
@@ -16,16 +17,14 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="./js/function.js" defer></script>
   </head>
   <body>
     <section class="page_wrapper" id="content">
       <section class="main_wrapper">
         <header>
-          <nav class="navbar">
+          <section class="navbar">
             <div id="menu-button" data-lenis-toggle="" class="menu-button">
               <a href="javascript:void(0);" id="menu-button-a">
                 <img
@@ -53,7 +52,7 @@
               <a
                 href="javascript:void(0);"
                 aria-current="page"
-                class="nav-header w--current"
+                class="nav-header"
                 >RONIN</a
               >
             </div>
@@ -62,150 +61,158 @@
                 ><div class="text-block">Test</div></a
               >
             </div>
-          </nav>
 
-          <aside class="navbar-content">
-            <div class="navbar-content-wrapper">
-              <div class="bg-image-wrapper _000">
-                <img
-                  src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/66950f13b761c5d22cf827ae_Image.avif"
-                  loading="eager"
-                  sizes="100vw"
-                  srcset="
-                    https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/66950f13b761c5d22cf827ae_Image-p-500.avif  500w,
-                    https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/66950f13b761c5d22cf827ae_Image.avif       1060w
-                  "
-                  alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
-                  class="absolute-tear normal"
-                /><img
-                  src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/668f555b53e5e2203099f578_ronin-tear-circle.avif"
-                  loading="eager"
-                  alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
-                  class="absolute-red"
-                /><img
-                  src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/668e62913d682dfac92c532d_scroll-down.avif"
-                  loading="lazy"
-                  alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
-                  class="mid"
-                />
-              </div>
-              <div class="navbar-top">
-                <h3 class="h2-100px white">RONIN</h3>
-                <a
-                  href="javascript:void(0);"
-                  target="_blank"
-                  class="booking-button black mobile w-inline-block"
-                  ><div class="text-block _14px whitecolor">
-                    MAKE A BOOKING
-                  </div></a
-                >
-                <div class="menu-links">
+            <aside class="navbar-content">
+              <div class="navbar-content-wrapper">
+                <div class="bg-image-wrapper _000">
+                  <img
+                    src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/66950f13b761c5d22cf827ae_Image.avif"
+                    loading="eager"
+                    sizes="100vw"
+                    srcset="
+                      https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/66950f13b761c5d22cf827ae_Image-p-500.avif  500w,
+                      https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/66950f13b761c5d22cf827ae_Image.avif       1060w
+                    "
+                    alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
+                    class="absolute-tear normal"
+                  /><img
+                    src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/668f555b53e5e2203099f578_ronin-tear-circle.avif"
+                    loading="eager"
+                    alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
+                    class="absolute-red"
+                  /><img
+                    src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/668e62913d682dfac92c532d_scroll-down.avif"
+                    loading="lazy"
+                    alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
+                    class="mid"
+                  />
+                </div>
+                <div class="navbar-top">
+                  <h3 class="h2-100px white">RONIN</h3>
                   <a
-                    href=""
-                    aria-current="page"
-                    class="nav-link w-inline-block w--current"
-                    ><div>HOME</div></a
-                  ><a href="javascript:void(0);" class="nav-link w-inline-block"
-                    ><div>EVENTS</div></a
-                  ><a href="javascript:void(0);" class="nav-link w-inline-block"
-                    ><div>EXPERIENCES</div></a
-                  ><a href="javascript:void(0);" class="nav-link w-inline-block"
-                    ><div>ABOUT</div></a
-                  ><a href="javascript:void(0);" class="nav-link w-inline-block"
-                    ><div>AMBIANCE</div></a
-                  ><a
-                    data-lenis-start=""
                     href="javascript:void(0);"
                     target="_blank"
-                    class="nav-link w-inline-block"
-                    ><div>MENU</div></a
+                    class="booking-button black mobile w-inline-block"
+                    ><div class="text-block _14px whitecolor">
+                      MAKE A BOOKING
+                    </div></a
                   >
-                  <div class="nav-link-hvoer w-embed"></div>
+                  <div class="menu-links">
+                    <a
+                      href=""
+                      aria-current="page"
+                      class="nav-link w-inline-block w--current"
+                      ><div>HOME</div></a
+                    ><a
+                      href="javascript:void(0);"
+                      class="nav-link w-inline-block"
+                      ><div>EVENTS</div></a
+                    ><a
+                      href="javascript:void(0);"
+                      class="nav-link w-inline-block"
+                      ><div>EXPERIENCES</div></a
+                    ><a
+                      href="javascript:void(0);"
+                      class="nav-link w-inline-block"
+                      ><div>ABOUT</div></a
+                    ><a
+                      href="javascript:void(0);"
+                      class="nav-link w-inline-block"
+                      ><div>AMBIANCE</div></a
+                    ><a
+                      data-lenis-start=""
+                      href="javascript:void(0);"
+                      target="_blank"
+                      class="nav-link w-inline-block"
+                      ><div>MENU</div></a
+                    >
+                    <div class="nav-link-hvoer w-embed"></div>
+                  </div>
+                  <div class="social-media-link bottom-0">
+                    <a
+                      href="https://www.instagram.com/ronin_dubai/"
+                      target="_blank"
+                      class="social-media small w-inline-block"
+                      ><img
+                        src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/6697c94f2d9dd4852336503d_Frame%201321315243.webp"
+                        loading="lazy"
+                        alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
+                        class="image-7" /></a
+                    ><a
+                      href="https://www.facebook.com/ronindubai"
+                      target="_blank"
+                      class="social-media small w-inline-block"
+                      ><img
+                        src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/6697c94f36c81e9b524f8f03_Frame%201321315244.webp"
+                        loading="lazy"
+                        alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI" /></a
+                    ><a
+                      href="https://www.youtube.com/@FIVEHotelsandResorts/featured"
+                      target="_blank"
+                      class="social-media small w-inline-block"
+                      ><img
+                        src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/6697c94f67ecfb61ef7052da_Frame%201321315246.webp"
+                        loading="lazy"
+                        alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI" /></a
+                    ><a
+                      href="https://www.tiktok.com/@fivehotelsandresorts"
+                      target="_blank"
+                      class="social-media small w-inline-block"
+                      ><img
+                        src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/66b5bf81ae0037603980d9e1_tiktik.webp"
+                        loading="lazy"
+                        alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI" /></a
+                    ><a
+                      href="https://www.tripadvisor.com/Restaurant_Review-g295424-d27422303-Reviews-Ronin-Dubai_Emirate_of_Dubai.html?m=19905"
+                      target="_blank"
+                      class="social-media small w-inline-block"
+                      ><img
+                        src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/6697c94f0ddaa060530fdad3_Frame%201321315247.webp"
+                        loading="lazy"
+                        alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
+                    /></a>
+                  </div>
                 </div>
-                <div class="social-media-link bottom-0">
-                  <a
-                    href="https://www.instagram.com/ronin_dubai/"
-                    target="_blank"
-                    class="social-media small w-inline-block"
-                    ><img
-                      src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/6697c94f2d9dd4852336503d_Frame%201321315243.webp"
-                      loading="lazy"
-                      alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
-                      class="image-7" /></a
-                  ><a
-                    href="https://www.facebook.com/ronindubai"
-                    target="_blank"
-                    class="social-media small w-inline-block"
-                    ><img
-                      src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/6697c94f36c81e9b524f8f03_Frame%201321315244.webp"
-                      loading="lazy"
-                      alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI" /></a
-                  ><a
-                    href="https://www.youtube.com/@FIVEHotelsandResorts/featured"
-                    target="_blank"
-                    class="social-media small w-inline-block"
-                    ><img
-                      src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/6697c94f67ecfb61ef7052da_Frame%201321315246.webp"
-                      loading="lazy"
-                      alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI" /></a
-                  ><a
-                    href="https://www.tiktok.com/@fivehotelsandresorts"
-                    target="_blank"
-                    class="social-media small w-inline-block"
-                    ><img
-                      src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/66b5bf81ae0037603980d9e1_tiktik.webp"
-                      loading="lazy"
-                      alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI" /></a
-                  ><a
-                    href="https://www.tripadvisor.com/Restaurant_Review-g295424-d27422303-Reviews-Ronin-Dubai_Emirate_of_Dubai.html?m=19905"
-                    target="_blank"
-                    class="social-media small w-inline-block"
-                    ><img
-                      src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/6697c94f0ddaa060530fdad3_Frame%201321315247.webp"
-                      loading="lazy"
-                      alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
-                  /></a>
-                </div>
-              </div>
-              <div class="navbar-time"></div>
-              <div class="red-absolute">
-                <div class="timimng-header whitecolor">
-                  <div class="timeing-wrapper">
-                    <div class="timing--header"><p>SUN - FRi</p></div>
-                    <div class="timing-content">
-                      <p><span class="bold-700">6 PM - 2 AM</span></p>
+                <div class="navbar-time"></div>
+                <div class="red-absolute">
+                  <div class="timimng-header whitecolor">
+                    <div class="timeing-wrapper">
+                      <div class="timing--header"><p>SUN - FRi</p></div>
+                      <div class="timing-content">
+                        <p><span class="bold-700">6 PM - 2 AM</span></p>
+                      </div>
+                    </div>
+                    <div class="timeing-wrapper whitecolor">
+                      <div class="timing--header"><p>SATURDAY</p></div>
+                      <div class="timing-content">
+                        <p>
+                          <span class="bold-700"
+                            >1 PM - 4:30 PM<br />6 PM - 2 AM</span
+                          >
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="timeing-wrapper whitecolor">
-                    <div class="timing--header"><p>SATURDAY</p></div>
-                    <div class="timing-content">
-                      <p>
-                        <span class="bold-700"
-                          >1 PM - 4:30 PM<br />6 PM - 2 AM</span
-                        >
-                      </p>
-                    </div>
-                  </div>
+                  <article class="phone-whatsapp-wrapper">
+                    <a href="javascript:void(0);" class="call w-inline-block"
+                      ><img
+                        src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/669a41408d6a2b54f6b55c40__1.webp"
+                        loading="lazy"
+                        alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI" /></a
+                    ><a
+                      href="javascript:void(0);"
+                      target="_blank"
+                      class="call w-inline-block"
+                      ><img
+                        src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/669a4140a69be50c3a83a8b5_Group%201321315529.webp"
+                        loading="lazy"
+                        alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
+                    /></a>
+                  </article>
                 </div>
-                <article class="phone-whatsapp-wrapper">
-                  <a href="javascript:void(0);" class="call w-inline-block"
-                    ><img
-                      src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/669a41408d6a2b54f6b55c40__1.webp"
-                      loading="lazy"
-                      alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI" /></a
-                  ><a
-                    href="javascript:void(0);"
-                    target="_blank"
-                    class="call w-inline-block"
-                    ><img
-                      src="https://cdn.prod.website-files.com/668e56004bfe9b6b63311d8d/669a4140a69be50c3a83a8b5_Group%201321315529.webp"
-                      loading="lazy"
-                      alt="RONIN | JAPANESE RESTAURANT IN FIVE LUXE JBR, DUBAI"
-                  /></a>
-                </article>
               </div>
-            </div>
-          </aside>
+            </aside>
+          </section>
         </header>
         <main>
           <section class="two-section-one-fold">
@@ -453,7 +460,9 @@
                     href="javascript:void(0);"
                     target="_blank"
                     class="booking-button white w-inline-block"
-                    ><div class="text-block">SEE THE MENU</div>
+                    ><div class="text-block center">
+                      SEE THE MENU <br />(webflow sldier -> swiper)
+                    </div>
                   </a>
                   <div class="swiper slider">
                     <!-- Additional required wrapper -->
@@ -792,13 +801,9 @@
                   <div class="tab-menu w-tab-menu" role="tablist">
                     <a
                       data-w-tab="Tab 1"
-                      data-w-id="a3c4cfd2-c49d-9bdc-9d50-3e761f4cdf07"
                       class="tab w-inline-block w-tab-link w--current"
                       id="w-tabs-0-data-w-tab-0"
                       href="#w-tabs-0-data-w-pane-0"
-                      role="tab"
-                      aria-controls="w-tabs-0-data-w-pane-0"
-                      aria-selected="true"
                       ><div>Private dinning room</div></a
                     ><a
                       data-w-tab="Tab 2"
@@ -806,9 +811,6 @@
                       tabindex="-1"
                       id="w-tabs-0-data-w-tab-1"
                       href="#w-tabs-0-data-w-pane-1"
-                      role="tab"
-                      aria-controls="w-tabs-0-data-w-pane-1"
-                      aria-selected="false"
                       ><div>Pagoda</div></a
                     ><a
                       data-w-tab="Tab 3"
@@ -816,9 +818,6 @@
                       tabindex="-1"
                       id="w-tabs-0-data-w-tab-2"
                       href="#w-tabs-0-data-w-pane-2"
-                      role="tab"
-                      aria-controls="w-tabs-0-data-w-pane-2"
-                      aria-selected="false"
                       ><div>Omakase with Chef SK</div></a
                     ><a
                       data-w-tab="Tab 4"
@@ -826,9 +825,6 @@
                       tabindex="-1"
                       id="w-tabs-0-data-w-tab-3"
                       href="#w-tabs-0-data-w-pane-3"
-                      role="tab"
-                      aria-controls="w-tabs-0-data-w-pane-3"
-                      aria-selected="false"
                       ><div>Terrace &amp; outdoor lounge</div></a
                     ><a
                       data-w-tab="Tab 5"
@@ -836,19 +832,12 @@
                       tabindex="-1"
                       id="w-tabs-0-data-w-tab-4"
                       href="#w-tabs-0-data-w-pane-4"
-                      role="tab"
-                      aria-controls="w-tabs-0-data-w-pane-4"
-                      aria-selected="false"
                       ><div>Sushi bar</div></a
                     ><a
                       data-w-tab="Tab 6"
-                      id="w-node-_095ae708-cf3e-0e8d-a50b-f20e3be1e28d-63311d9c"
                       class="tab w-inline-block w-tab-link"
                       tabindex="-1"
                       href="#w-tabs-0-data-w-pane-5"
-                      role="tab"
-                      aria-controls="w-tabs-0-data-w-pane-5"
-                      aria-selected="false"
                       ><div>Teppanyaki Grill Seating</div></a
                     >
                   </div>
@@ -857,8 +846,6 @@
                       data-w-tab="Tab 1"
                       class="auto-tabs_pane w-tab-pane w--tab-active"
                       id="w-tabs-0-data-w-pane-0"
-                      role="tabpanel"
-                      aria-labelledby="w-tabs-0-data-w-tab-0"
                     >
                       <div class="experience-tab-content">
                         <img
@@ -879,8 +866,6 @@
                       data-w-tab="Tab 2"
                       class="auto-tabs_pane w-tab-pane"
                       id="w-tabs-0-data-w-pane-1"
-                      role="tabpanel"
-                      aria-labelledby="w-tabs-0-data-w-tab-1"
                     >
                       <div class="experience-tab-content">
                         <img
@@ -901,8 +886,6 @@
                       data-w-tab="Tab 3"
                       class="auto-tabs_pane w-tab-pane"
                       id="w-tabs-0-data-w-pane-2"
-                      role="tabpanel"
-                      aria-labelledby="w-tabs-0-data-w-tab-2"
                     >
                       <div class="experience-tab-content">
                         <img
@@ -923,7 +906,6 @@
                       data-w-tab="Tab 4"
                       class="auto-tabs_pane w-tab-pane"
                       id="w-tabs-0-data-w-pane-3"
-                      role="tabpanel"
                     >
                       <div class="experience-tab-content">
                         <img
@@ -945,8 +927,6 @@
                       data-w-tab="Tab 5"
                       class="auto-tabs_pane w-tab-pane"
                       id="w-tabs-0-data-w-pane-4"
-                      role="tabpanel"
-                      aria-labelledby="w-tabs-0-data-w-tab-4"
                     >
                       <div class="experience-tab-content">
                         <img
@@ -963,7 +943,11 @@
                         />
                       </div>
                     </div>
-                    <div data-w-tab="Tab 6" class="auto-tabs_pane w-tab-pane">
+                    <div
+                      data-w-tab="Tab 6"
+                      class="auto-tabs_pane w-tab-pane"
+                      id="w-tabs-0-data-w-pane-5"
+                    >
                       <div class="experience-tab-content">
                         <img
                           sizes="(max-width: 479px) 94vw, (max-width: 767px) 97vw, 50vw"
